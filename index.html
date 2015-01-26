@@ -1,68 +1,50 @@
-
 <!doctype html>
 <!-- With an assist from https://github.com/cubewebsites/Impress.js-Tutorial -->
 <!-- http://placeit.breezi.com/ for screenshots of websites and devices -->
 <html lang="en">
-  <head>
-    <title>JLai</title>
+    <head>
+        <title>Something about Vagrant</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/normalize.css" rel="stylesheet" />
-        <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Quicksand|Headland+One' rel='stylesheet' type='text/css'>
-
-        <!-- <link href="css/jlaicss.css" rel="stylesheet" type="text/css" /> -->
-
-<!--         <link id="theme" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/ui-darkness/jquery-ui.css" rel="stylesheet" /> -->
-<!--         <link href="src/css/style.css" rel="stylesheet" type="text/css" /> -->
-        <!-- <link href="http://jlai.org/dist/basic-animations.css" rel="stylesheet" type="text/css" /> -->
-
         <link href="css/style.css" rel="stylesheet" />
-<!--         <link rel="icon" type="image/ico" href="http://www.mysite.com/favicon.ico"/> -->
         <link rel="icon" type="image/ico" href="/images/favicon.ico"/>
-        <!-- <link rel="icon" href="/favicon.ico" /> -->
+    </head>
 
-  </head>
+    <body class="impress-not-supported">
+        <ul id="nav">
+            <p><a href="#/about"><span>About</span></a></p>
+            <p><a href="#/getting_started"><span>Getting Started</span></a></p>
+            <p><a href="#/stack"><span>The Stack</span></a></p>
+            <p><a href="#/contact"><span>Contact</span></a></p>
+            <!--<p><a href="#/future"><span>Future</span></a></p>-->
+            
+            <!--
+            <li><a href="#/about"><span>Gap</span></a></li>
+            <li><a href="#/projects"><span>Step 1</span></a></li>
+            <li><a href="#/stack"><span>Step 2</span></a></li>
+            <li><a href="#/contact"><span>Step 3</span></a></li>
+            <li><a href="#/future"><span>Step 3</span></a></li>
+            -->
+        </ul>
 
+        <!--
+        <div id="hint">
+            <p>Use spacebar, arrow keys or page up / down to navigate</p>
+        </div>
+        <script>
+        if ('ontouchstart' in document.documentElement) {
+            document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+        }
+        </script>
+        -->
 
-
-<body class="impress-not-supported">
-
-<ul id="nav">
-
-  <p><a href="#/about"><span>About</span></a></p>
-  <p><a href="#/projects"><span>Projects</span></a></p>
-  <p><a href="#/stack"><span>The Stack</span></a></p>
-  <p><a href="#/contact"><span>Contact</span></a></p>
-  <p><a href="#/future"><span>Future</span></a></p>
-<!--
-  <p>
-  <li><a href="#/step-4"><span>Gap</span></a></li>
-  <li><a href="#/step-1"><span>Step 1</span></a></li>
-  <li><a href="#/step-2"><span>Step 2</span></a></li>
-  <li><a href="#/step-3"><span>Step 3</span></a></li>
--->
-</ul>
-
-<!--
-    <div id="hint">
-      <p>Use spacebar, arrow keys or page up / down to navigate</p>
-    </div>
-    <script>if ('ontouchstart' in document.documentElement) {
-      document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
-    }
-    </script>
--->
-
-    <div id="fallback-message">
-    <!-- <div class="no-support-message"> -->
-        Your browser doesn't support impress.js.  Try Chrome, Safari, or Firefox.
-    </div>
+        <div id="fallback-message">
+        <!-- <div class="no-support-message"> -->
+            Your browser doesn't support impress.js.  Try Chrome, Safari, or Firefox.
+        </div>
 
 
-  <div id="impress">
-
-
-
+        <div id="impress">
 <!--
     unmodified project chunk, 0 0 0 coordinates before modification
 
@@ -226,33 +208,36 @@ hhhhhhhhh=================================
 -->
 
 
+        <!-- about  start-->
 
+        <div id="about" class="step" id="title">
+            <h1>What is Vagrant?</h1>
+            <ul class="alignleft">
+                <li>Vagrant is a tool for building complete development environments</li>
+                <li>Created by <a href="https://github.com/mitchellh">Mitchell Hashimoto</a> in January 2010, written with Ruby</li>
+                <li>Vagrant's goal: Development environments make easy.</li>
+            </ul>
+        </div>
 
-    <div id="about" class="step"  id="title">
-      <h1>Who is JLai?</h1>
-      <ul class="alignleft">
-        <li>SF Bay local</li>
-        <li>School in Davis, volunteer education work in Oakland, Sacramento and LA</li>
-        <li>IT tech support work in LA</li>
-      </ul>
-    </div>
+        <div class="step about" data-x="500" data-y="0" data-z="0" data-rotate-y="55">
+            <h2>Why Vagrant:</h2>
+            <ul class="alignleft">
+                <li>A single config file to describe the type of machine you want, the software that needs to be installed.</li>
+                <li>A single command <a href="https://generalassemb.ly/education/web-development-immersive">vagrant up</a> to start the machine.</li>
+                <li>Environment consistent over Linux, Mac OS X, or Windows by the same configuration.</li>
+                <li>With famous virtual machine provider: VirtualBox, VMware, AWS, or others.</li>
+            </ul>
+        </div>
 
-    <div class="step about" data-x="500" data-y="0" data-z="0" data-rotate-y="55">
-      <h2>About Me:</h2>
-      <ul class="alignleft">
-        <li><a href="https://generalassemb.ly/education/web-development-immersive">GA WDI</a> graduate</li>
-        <li>Translation? General Assembly Web Development Immersive</li>
-        <li>A very good fullstack program indeed, frontend & backend, Ruby and Javascript focused</li>
-      </ul>
-    </div>
+        <div class="step about" data-x="500" data-y="-400"  data-z="0" data-rotate-x="45">
+            <img src="images/vagrant/logo_vagrant.png">
+            <ul class="alignleft">
+                <li>Website: <a href="https://www.vagrantup.com" target="_blank">https://www.vagrantup.com</a></li>
+                <li>Github: <a href="https://github.com/mitchellh/vagrant" target="_blank">https://github.com/mitchellh/vagrant</a></li>
+            </ul>
+        </div>
 
-    <div class="step about" data-x="500" data-y="-400"  data-z="0" data-rotate-x="45">
-      <h2>And...</h2>
-      <ul class="alignleft">
-        <li>Linux and Open Source enthusiast</li>
-        <li>Can run the three platforms (Win, Mac, Linux), and recover data in case of a crash....</li>
-      </ul>
-    </div>
+        <!-- about end -->
 
 
 
@@ -260,42 +245,44 @@ hhhhhhhhh=================================
 
 <!--  Projects  -1000 , -1732 , 0 multiplied by original coordinates dispositions -->
 
+        <!-- getting started start-->
+        
+        <div id="getting_started" class="step" data-x="-1700" data-y="-1732" data-z="1000" data-rotate-y="0" data-rotate-x="35">
+            <h1>Installation</h1>
+            <p>First, <a href="https://www.vagrantup.com/downloads.html" target="_blank">download</a> vagrant</p>
+            <p>Then, VirtualBox for its free</p>
+        </div>
 
-    <div id="projects" class="step" data-x="-1700" data-y="-1732" data-z="1000" data-rotate-y="0" data-rotate-x="35">
-      <h1>Several Projects</h1>
-        Individual & Team
-    </div>
-<!-- ... -->
-    <div class="step project" data-x="-1000" data-y="-1732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+        <!-- up and run command -->
+        <div class="step project" data-x="-1000" data-y="-1732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+            <img src="images/projects/pairprogramming_01.png" width="752px" />
+        </div>
 
-        <img src="images/projects/pairprogramming_01.png" width="752px" />
+        <!-- Vagrantfile -->
+        <div class="step project" data-x="-1875" data-y="-1732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+            <h2>Project: Pair Programming Bot Clone</h2>
+            <ul class="alignleft">
+                <li>A interactive website that prompts one to test, refactor, or implement a feature</li>
+                <li>Ruby: Pry debugger, Sinatra Web Framework; HTML/CSS: Twitter Bootstrap framework</li>
+                <li><a href="https://github.com/agsdot/pairprogrammingbot" target="_blank">Github source code</a></li>
+            </ul>
+        </div>
 
-    </div>
+        <!-- package output -->
+        <div class="step project" data-x="-1875" data-y="-1732" data-z="-5" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
+            <img src="images/projects/pairprogramming_02.png" width="752px" />
+        </div>
 
-    <div class="step project" data-x="-1875" data-y="-1732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
-        <h2>Project: Pair Programming Bot Clone</h2>
-        <ul class="alignleft">
-          <li>A interactive website that prompts one to test, refactor, or implement a feature</li>
-          <li>Ruby: Pry debugger, Sinatra Web Framework; HTML/CSS: Twitter Bootstrap framework</li>
-          <li><a href="https://github.com/agsdot/pairprogrammingbot" target="_blank">Github source code</a></li>
+        <!--
+        <div class="step project" data-x="-1875" data-y="-2732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
+            <img src="images/projects/takemetoga_01_laptop.png" width="752px" />
+        </div>
+        -->
 
-
-        </ul>
-    </div>
-
-
-    <div class="step project" data-x="-1875" data-y="-1732" data-z="-5" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
-
-        <img src="images/projects/pairprogramming_02.png" width="752px" />
-
-    </div>
-<!-- ... -->
-    <div class="step project" data-x="-1875" data-y="-2732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
-        <img src="images/projects/takemetoga_01_laptop.png" width="752px" />
-    </div>
+        <!-- getting staeted end-->
 
 
-
+<!--
     <div class="step project" data-x="-2750" data-y="-2732" data-z="0" data-rotate-x="-55" data-rotate-y="0" data-rotate-z="0" >
 
         <h2>Project: Take me to GA</h2>
@@ -313,8 +300,6 @@ hhhhhhhhh=================================
         <img src="images/projects/takemetoga_02_laptop.png" width="752px" />
 
     </div>
-
-<!-- ... -->
 
     <div class="step project" data-x="-2750" data-y="-3732" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" >
 
@@ -336,6 +321,7 @@ hhhhhhhhh=================================
         <img src="images/projects/quote8_02_laptop.png" width="752px" />
 
     </div>
+-->
 
 <!-- ...
 
@@ -362,6 +348,8 @@ hhhhhhhhh=================================
 
 <!--  Projects  -2732 , -732 , 0 multiplied by original coordinates dispositions -->
 <!-- offset by an additional z -1000 -->
+
+    <!-- other vagrant useful command and function -->
 
     <div id="stack" class="step" data-x="-2732" data-y="-732" data-z="1000" data-rotate-y="45">
       <h1>Technology Stacks Used</h1>
@@ -393,11 +381,14 @@ hhhhhhhhh=================================
       </ul>
     </div>
 
+    <!-- end -->
+
 
 
 <!--  Contact  1000 , -1000 , 0 multiplied by original coordinates dispositions -->
 
 
+    <!-- about impress.js -->
     <div id="contact" class="step contact" data-x="2200" data-y="-2600" data-rotate-x="120">
       <h1>Contact Me!</h1>
     </div>
@@ -418,6 +409,7 @@ hhhhhhhhh=================================
     email: <a href="mailto:jonathanlai AT gmail DOT com">jonathanlai AT gmail DOT com</a>
 
     </div>
+    <!-- end -->
 
 
 
@@ -425,7 +417,7 @@ hhhhhhhhh=================================
 
 <!--  Future  500, -1732, 3464         0 multiplied by original coordinates dispositions -->
 
-
+<!--
     <div id="future" class="step" data-x="500" data-y="-1732" data-z="3464" data-scale="1">
       <h1>The Future?</h1>
     </div>
@@ -442,7 +434,7 @@ hhhhhhhhh=================================
       Would love to work in a company dealing with healthcare, education, or food technology.
     </div>
 
-
+-->
 
 
 
@@ -549,30 +541,6 @@ hhhhhhhhh=================================
 
 
 
-
-<div style="position: fixed; top: 10px; right: 10px; pointer-events: auto;">
-
-    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-<!--
-    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
--->
-    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-
-    <a href="http://twitter.com/share" class="twitter-share-button" data-text="JLai.org @jonlai" data-url="http://www.jlai.org"></a>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-    <a href="http://www.linkedin.com/in/jonlai1" style="text-decoration:none">
-        <img src="images/linkedin.jpg"  height="20" alt="View Jonathan Lai's LinkedIn profile" style="margin-left:5px;" border="0">
-    </a>
-
-<!--     <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-    <a href="http://www.linkedin.com/in/jonlai1">
-        Jonathan Lai
-    </a>
-    </span> -->
-</div>
-
-
   <a id="arrowLeft" class="arrow">&lt;</a>
   <a id="arrowRight" class="arrow">&gt;</a>
 
@@ -590,7 +558,7 @@ hhhhhhhhh=================================
 
   <script src="js/impress.js"></script>
 
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
   <script>     
     var api = impress();     
     api.init();  
